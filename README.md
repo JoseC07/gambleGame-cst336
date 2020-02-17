@@ -1,2 +1,2 @@
-# lab3-cst336
-Jose Caudillo
+# cst336-lab1-josecaudillo
+Jose Caudillo cst336_02
