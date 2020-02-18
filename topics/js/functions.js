@@ -54,6 +54,7 @@ function checkGuess(){
     {
         text.innerHTML = "Sorry no reward :(";
     }
+    text1.innerHTML = '';
     guessField.value = '';
     guessField.focus();
 
