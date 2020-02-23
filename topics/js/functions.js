@@ -11,6 +11,7 @@ var countHeart = 0;
 
 
 function checkGuess(){
+    text1.innerHTML = '';
     $(body).css("background-color","white")
     var userGuess = Number(guessField.value);
     countCoin = 0;
@@ -35,26 +36,27 @@ function checkGuess(){
     if(countCherry === 3)
     {
         text.innerHTML = "Three Cherries! x3";
-        text1.innerHTML = "$"+userGuess * 3;
+        text1.innerHTML = "Reward: $" + userGuess * 3;
         $(body).css("background-color","red")
     }
     else if(countCoin === 3)
     {
         text.innerHTML = "Three Coins! x2";
-        text1.innerHTML = "$"+userGuess * 2;
+        text1.innerHTML = "Reward: $"+userGuess * 2;
         $(body).css("background-color","red")
     }
     else if(countHeart === 3)
     {
         text.innerHTML = "Three Hearts! JackPot! x10";
-        text1.innerHTML = "$"+userGuess * 10;
+        text1.innerHTML = "Reward: $"+userGuess * 10;
         $(body).css("background-color","gold")
     }
     else
     {
         text.innerHTML = "Sorry no reward :(";
+        text1.innerHTML = "Reward: $0";
     }
-    text1.innerHTML = '';
+    
     guessField.value = '';
     guessField.focus();
 
